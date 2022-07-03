@@ -1,0 +1,398 @@
+.containerr {
+  position: relative;
+  width: 50%;
+}
+.scr_img {
+
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%; 
+   transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+}
+
+.middle1 {
+  transition: .5s ease;
+  opacity: 0;
+  position : absolute;
+  top: 50%;
+  right: 50%; 
+   transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  /* margin-left: auto; */
+  z-index: 2;
+
+
+}
+
+
+.text1 {
+  background-color: #000000;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+.containerr:hover .scr_img {
+  opacity: 0.3;
+}
+
+.containerr:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #000000;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+
+
+
+
+
+.menu{
+    background: #4c4c4c; /* Old browsers */
+    background: -moz-linear-gradient(top,  #4c4c4c 0%, #595959 12%, #666666 25%, #474747 39%, #2c2c2c 50%, #000000 51%, #111111 60%, #2b2b2b 76%, #1c1c1c 91%, #131313 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #4c4c4c 0%,#595959 12%,#666666 25%,#474747 39%,#2c2c2c 50%,#000000 51%,#111111 60%,#2b2b2b 76%,#1c1c1c 91%,#131313 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #4c4c4c 0%,#595959 12%,#666666 25%,#474747 39%,#2c2c2c 50%,#000000 51%,#111111 60%,#2b2b2b 76%,#1c1c1c 91%,#131313 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 ); /* IE6-9 */
+        position: fixed;
+        left: 0;
+        top: 0;
+        border-top: 0;
+        z-index: 100;
+        box-shadow: -1px 7px 1px rgba(0,0,0,0.3);
+        width: 100%;
+        background-color: #333333;
+        color: rgb(248, 248, 248);
+        height: 60px;
+       align-items: center;
+    }
+    .menu #logo {
+        float: left;
+        height: 70px;
+        padding: 0px 20px;
+        font-size: 1.2em;
+        line-height: 30px;
+       
+    }
+    .menu > ul{
+        margin: 0;
+        padding: 0;
+    float: left;
+    list-style-type: none;
+    
+    
+    }
+    .menu > ul > li {
+        float: left;
+       
+    }
+    .menu-item {
+        display: inline-block;
+        padding: 15px 20px;
+        height: 30px;
+        line-height: 30px;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+      
+        
+    }
+    .menu-item:hover{
+        background-color: #ff0055;
+    }
+
+
+    .menu ul li ul{
+      font-family: 'Indie Flower', cursive;
+       
+
+    }
+
+    
+    .menu ul li ul > a  {
+      background-color: gray;
+       color: white;
+        text-decoration: none;
+    }
+    /*---------------------------style sub ------------ */
+     .sub-content{
+    background: #b5bdc8; /* Old browsers */
+    background: -moz-linear-gradient(top,  #b5bdc8 0%, #828c95 36%, #28343b 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #b5bdc8 0%,#828c95 36%,#28343b 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #b5bdc8 0%,#828c95 36%,#28343b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#28343b',GradientType=0 ); /* IE6-9 */
+    
+    
+    
+         position: absolute;
+         top: 60px;
+         overflow: hidden;
+         background-color: #333333;
+         color: #fff;
+        max-height:0;
+        
+         
+     }
+     .sub-drob {
+        padding: 0;
+        
+    }
+     .sub-drob ul {
+         width: 100%;
+         padding: 10px 20px;
+         margin: 0;
+         list-style-type:none;
+         
+     }
+     .sub-drob > ul {
+      visibility: hidden;
+       opacity: 0; 
+  
+   }
+  
+   .menu ul li:hover .sub-drob > ul {
+       visibility: visible;
+       opacity: 1;
+       transition: visibility 0s, opacity 0.9s ease-in;
+   }
+     .sub-drop ul li {
+         display: inline block;
+         padding: 10px 20px;
+         font-size-adjust: initial;
+    
+     }
+     .sub-drop ul li:hover {
+        background-color: #ff0055;
+     }
+    
+    
+     /*------------------------ control -----------*/
+     .menu-item:focus{
+         background-color: #ff0055;
+         
+     }
+     .menu ul li:hover .sub-content {
+    background: #b5bdc8; /* Old browsers */
+    background: -moz-linear-gradient(top,  #b5bdc8 0%, #828c95 36%, #28343b 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #b5bdc8 0%,#828c95 36%,#28343b 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #b5bdc8 0%,#828c95 36%,#28343b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#28343b',GradientType=0 ); /* IE6-9 */
+    
+    
+    
+         max-height: 400px;
+         transition: max-height 0.3s ease-in;
+         -webkit-transition: max-height 0.3s ease-in;
+         -moz-transition: max-height 0.3s ease-in;
+     }
+     
+     #rmenu {
+         float: left; 
+     }
+     #mar{
+     background: -webkit-linear-gradient(top,  #f6f8f9 0%,#e5ebee 50%,#d7dee3 51%,#f5f7f9 100%);  
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', endColorstr='#f5f7f9',GradientType=0 ); /* IE6-9 */
+    padding: 20px 20px;
+    width: 1480px ; 
+    height:50px    ;          
+    float: left;
+    font-family: 'Akronim';font-size: 22px;
+    font-size:xx-large ; 
+    color: #000000;
+    font-weight: bold;
+    
+    
+    
+     }
+    
+    .sometext{
+        padding-top: 30px;
+        font-size: 2em;
+        text-align: center;
+        font-weight: bold;
+            
+        
+    }
+    
+     .imgstyle {
+    
+         text-align: center;    
+         margin: auto ; 
+         padding : top ;
+         
+     }
+     .imgstyle img {
+        border: 1px solid #999 ;
+        box-shadow: -1px 5px 1px grey;
+        
+    
+    
+     }
+     hr.style-eight {
+        overflow: visible; /* For IE */
+        padding: 0;
+        border: none;
+        border-top: medium double #333;
+        color: #333;
+        text-align: center;
+    }
+    hr.style-eight:after {
+        content: "§";
+        display: inline-block;
+        position: relative;
+        top: -0.7em;
+        font-size: 1.5em;
+        padding: 0 0.25em;
+        background: white;
+    }
+    #about{
+        font-weight: bold;
+        font-size: xx-large;
+        color: white;
+        font-size: x-large;
+    }
+    #description{
+        color: #ceab9d;
+        font-family: 'Abril Fatface', cursive;
+        font-family: 'Anton', sans-serif;
+        font-family: 'Cormorant Garamond', serif;
+        font-family: 'Henny Penny', cursive;
+        font-size: x-large;
+        
+
+    
+    
+    }
+    input[type=text], select, textarea {
+      width: 100%; /* Full width */
+      padding: 12px; /* Some padding */ 
+      border: 1px solid #ccc; /* Gray border */
+      border-radius: 4px; /* Rounded borders */
+      box-sizing: border-box; /* Make sure that padding and width stays in place */
+      margin-top: 6px; /* Add a top margin */
+      margin-bottom: 16px; /* Bottom margin */
+      resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+    }
+    
+    /* Style the submit button with a specific background color etc */
+    input[type=submit] {
+      background-color: #af6b4c;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    /* When moving the mouse over the submit button, add a darker green color */
+    input[type=submit]:hover {
+      background-color: #8ba4a7;
+    }
+    
+    /* Add a background color and some padding around the form */
+    .container {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+    
+    form {
+      border: 4px solid #f1f1f1;
+    }
+    
+    /* Add some padding and a grey background color to containers */
+    .container1 {
+      padding: 20px;
+      background-color: #f1f1f1;
+    }
+    
+    /* Style the input elements and the submit button */
+    input[type=text], input[type=submit] {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    
+    /* Add margins to the checkbox */
+    input[type=checkbox] {
+      margin-top: 16px;
+    }
+    
+    /* Style the submit button */
+    input[type=submit] {
+      background-color: #0ee7c0;
+      color: white;
+      border: none;
+    }
+    
+    input[type=submit]:hover {
+      opacity: 0.8;
+    }
+   
+body {
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+}
+
+
+nav input[type=text]{
+
+float: right ;
+padding: 6px; 
+border: none;
+top: auto;
+margin-top: 13px;
+font-size: 17px;
+width: 20%;
+border-radius: 10px;
+outline: none;
+
+}
+.menu-item{
+text-transform: uppercase;
+font-family: 'Indie Flower', cursive;
+}
+
+.programmer_css  img {
+
+top: 0px;
+}
+
+.programmer_css a {
+  font-size: x-large;
+  color: rgb(37, 181, 230);
+  background-color: #eb911a00;
+  font-size: large;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+
+.about_st {
+
+  font-family: 'Indie Flower', cursive;
+ padding: 13px 13px;
+ background-color: rgb(72, 70, 70);
+ color: white;
+}
+#rmenu :hover{
+  background-color: #ff0055;
+}
+ 
